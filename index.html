@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="div">
+        <h4>Insert Data:</h4>
+        <input type="text" id="name" placeholder="Enter name"><br>
+        <input type="text" id="class" placeholder="Enter class"><br>
+        <input type="text" id="section" placeholder="Enter section"><br>
+        <input type="text" id="rollno" placeholder="Enter rollno"><br>
+        <button onclick="addItem()">ADD</button>
+        <button onclick="showStudent()">Show</button>
+        <ul id="ul1"></ul>
+
+       
+    </div>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA0nYVJp3Op9sIz_M2Kj1u51p-NKnn3HJk",
+    authDomain: "insertdata-91415.firebaseapp.com",
+    projectId: "insertdata-91415",
+    storageBucket: "insertdata-91415.appspot.com",
+    messagingSenderId: "745153076942",
+    appId: "1:745153076942:web:b267414210297d548b7a9f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+    <script src="data.js"></script>
+</body>
+
+</html>
